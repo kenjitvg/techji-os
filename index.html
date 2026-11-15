@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090e1c">
+  <title>TECHJI OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main id="desktop" data-theme="dark" data-wallpaper="ocean">
+
+    <!-- TECHJI BOOT SCREEN -->
+    <section id="boot-screen">
+      <div class="boot-content">
+        <div class="boot-logo">T</div>
+        <h1>TECHJI OS</h1>
+        <p class="boot-version">VERSION 1.1</p>
+
+        <div class="boot-loader">
+          <div id="boot-progress"></div>
+        </div>
+
+        <p id="boot-status">Starting TECHJI OS...</p>
+      </div>
+
+      <div class="boot-copyright">
+        TECHJI SYSTEMS
+      </div>
+    </section>
+
+    <!-- DESKTOP BRANDING -->
+    <div class="brand">
+      <div class="logo">T</div>
+      <div>
+        <h1>TECHJI</h1>
+        <p>OPERATING SYSTEM</p>
+      </div>
+    </div>
+
+    <!-- DESKTOP ICONS -->
+    <div class="desktop-icons">
+
+      <button class="desktop-icon" data-app="Computer">
+        <span class="icon-image">💻</span>
+        <span>My Computer</span>
+      </button>
+
+      <button class="desktop-icon" data-app="Files">
+        <span class="icon-image">📁</span>
+        <span>Files</span>
+      </button>
+
+      <button class="desktop-icon" data-app="Notes">
+        <span class="icon-image">📝</span>
+        <span>Notes</span>
+      </button>
+
+      <button class="desktop-icon" data-app="Settings">
+        <span class="icon-image">⚙️</span>
+        <span>Settings</span>
+      </button>
+
+      <button class="desktop-icon" data-app="Browser">
+        <span class="icon-image">🌐</span>
+        <span>TECHJI Web</span>
+      </button>
+
+    </div>
+
+    <!-- APPLICATION WINDOWS -->
+    <div id="window-area"></div>
+
+    <!-- START MENU -->
+    <section id="start-menu" class="start-menu hidden">
+
+      <div class="start-header">
+        <div class="small-logo">T</div>
+        <div>
+          <strong>TECHJI OS</strong>
+          <p>Applications</p>
+        </div>
+      </div>
+
+      <input
+        type="search"
+        id="app-search"
+        placeholder="Search applications..."
+        autocomplete="off"
+      >
+
+      <div id="start-app-list">
+
+        <button data-app="Computer">💻 My Computer</button>
+        <button data-app="Files">📁 File Manager</button>
+        <button data-app="Notes">📝 Notes</button>
+        <button data-app="Settings">⚙️ Settings</button>
+        <button data-app="Browser">🌐 TECHJI Web</button>
+
+      </div>
+
+      <div class="start-footer">
+        <span>TECHJI OS 1.1</span>
+        <span>● Online</span>
+      </div>
+
+    </section>
+
+    <!-- TASKBAR -->
+    <footer class="taskbar">
+
+      <button id="start-button" title="Start Menu">T</button>
+
+      <div id="taskbar-apps"></div>
+
+      <div class="taskbar-right">
+        <span class="online-status">●</span>
+        <span id="clock">00:00</span>
+      </div>
+
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
